@@ -279,6 +279,7 @@ const studyTools = [
 	{ title: "Lichess Classes", description: "Crear una clase, añadir alumnos y organizar el trabajo del grupo. Muy útil para profesores.", links: [{ label: "Abrir Lichess Classes", href: "https://lichess.org/class/utSSjM8W" }] },
 	...lichessTeachingTools,
 	{ title: "Foro de Lichess", description: "Espacio para dudas, consultas y conversaciones sobre ajedrez.", links: [{ label: "Abrir foro de Lichess", href: "https://lichess.org/forum" }] },
+	{ title: "Puzzle Racer", description: "Carrera de puzzles para que juegue y participe el grupo en directo.", links: [{ label: "Abrir Puzzle Racer", href: "https://lichess.org/racer/XWgvv" }] },
 ];
 const studyToolIcons: LucideIcon[] = [Swords, BrainCircuit, FolderKanban, GraduationCap, RadioTower, Trophy, MonitorPlay, BookOpenCheck, Database, Network];
 const resourceCategoryIcons: Record<string, LucideIcon> = { Radio: RadioTower, "Películas y series": Film, "Plataformas de juego": Gamepad2, "Apps móviles": Smartphone, YouTubers: Youtube };
