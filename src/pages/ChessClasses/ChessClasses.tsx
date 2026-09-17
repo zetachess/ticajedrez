@@ -420,12 +420,6 @@ export function ChessClasses() {
 					{topic.number === "04" && <section className="tic-topic__lichess-tools"><p className="tic-presentation__eyebrow">MÁS HERRAMIENTAS DE LICHESS</p>{lichessTeachingTools.map((tool) => <article key={tool.title}><h3>{tool.title}</h3><p>{tool.description}</p><div>{tool.links.map((link) => <a className="tic-topic__study-link" href={link.href} target="_blank" rel="noreferrer" key={link.href}><Link2 size={16} aria-hidden="true" />{link.label}<ExternalLink size={14} aria-hidden="true" /></a>)}</div></article>)}</section>}
 				</section>;
 			})}
-			<section className="tic-source" id="documento-completo">
-				<p className="tic-presentation__eyebrow">12 · DOCUMENTO ÍNTEGRO</p>
-				<h2>Todo el texto, sin recortes.</h2>
-				<a className="tic-presentation__button" href="https://docs.google.com/document/d/1auuwEXt7J05ceAQ9vyPmmFzPzDl0jgVpnhwaf0lQZHU/edit?tab=t.0" target="_blank" rel="noreferrer">Abrir documento completo <ExternalLink size={17} aria-hidden="true" /></a>
-				<iframe title="Documento íntegro: TIC aplicadas al ajedrez" src="https://docs.google.com/document/d/1auuwEXt7J05ceAQ9vyPmmFzPzDl0jgVpnhwaf0lQZHU/preview?embedded=true" loading="lazy" />
-			</section>
 		</main>
 		<footer className="tic-presentation__footer"><b>TIC · AJEDREZ</b><span>Guía de recursos para aprender y enseñar.</span></footer>
 	</div>;
