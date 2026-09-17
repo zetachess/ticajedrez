@@ -423,7 +423,6 @@ export function ChessClasses() {
 			<section className="tic-source" id="documento-completo">
 				<p className="tic-presentation__eyebrow">12 · DOCUMENTO ÍNTEGRO</p>
 				<h2>Todo el texto, sin recortes.</h2>
-				<p>Este es el documento original completo. Los bloques anteriores son la guía visual para exponerlo; aquí tienes el contenido palabra por palabra, con todos sus ejemplos y recursos.</p>
 				<a className="tic-presentation__button" href="https://docs.google.com/document/d/1auuwEXt7J05ceAQ9vyPmmFzPzDl0jgVpnhwaf0lQZHU/edit?tab=t.0" target="_blank" rel="noreferrer">Abrir documento completo <ExternalLink size={17} aria-hidden="true" /></a>
 				<iframe title="Documento íntegro: TIC aplicadas al ajedrez" src="https://docs.google.com/document/d/1auuwEXt7J05ceAQ9vyPmmFzPzDl0jgVpnhwaf0lQZHU/preview?embedded=true" loading="lazy" />
 			</section>
