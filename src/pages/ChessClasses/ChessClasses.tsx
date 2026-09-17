@@ -78,7 +78,7 @@ const topics: Topic[] = [
 		number: "02", kicker: "EL LENGUAJE DEL TABLERO", title: "PGN, FEN y SAN", icon: FileCode2,
 		intro: "Los formatos son el lenguaje común que permite intercambiar información ajedrecística entre programas.",
 		points: ["PGN · partidas completas con comentarios y variantes", "FEN · una posición concreta lista para compartir", "SAN · e4, Cf3, Dxh7+… la notación de las jugadas"],
-		resources: [{ label: "Ejemplo de partida anotada", href: "https://lichess.org/study/beM3pwZa" }, { label: "Dataset de puzzles de Lichess", href: "https://huggingface.co/datasets/Lichess/chess-puzzles/viewer/default/train?row=0" }],
+		resources: [{ label: "Ejemplo de partida anotada", href: "https://lichess.org/study/beM3pwZa" }, { label: "Dataset de puzzles de Lichess", href: "https://huggingface.co/datasets/Lichess/chess-puzzles/viewer/default/train?row=0" }, { label: "Chessgames", href: "https://www.chessgames.com/" }],
 	},
 	{
 		number: "03", kicker: "INVESTIGAR Y PREPARAR", title: "Bases de datos", icon: Database,
