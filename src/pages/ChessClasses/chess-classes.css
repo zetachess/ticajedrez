@@ -69,6 +69,7 @@ body:has(.tic-presentation) main { min-height: 100vh; }
 .tic-topic__body p { color: #cbcacf; font-size: clamp(1.12rem, 1.8vw, 1.34rem); font-weight: 500; line-height: 1.7; margin: 0 0 20px; }
 .tic-topic__body .tic-topic__lead { color: #f2f1f4; }
 .tic-topic__lead strong { font-weight: 800; }
+.tic-topic__lead-highlight { color: #ff7a1c; }
 .tic-topic__code-example { background: linear-gradient(135deg, rgba(43, 90, 126, .58), rgba(53, 38, 103, .46)); border: 1px solid rgba(112, 190, 239, .55); border-left: 4px solid #5dbff3; border-radius: 10px; color: #e8f7ff; font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; margin: 22px 0; max-width: 745px; overflow: hidden; }.tic-topic__code-example summary { align-items: center; color: #f2fbff; cursor: pointer; display: grid; font-family: inherit; font-size: .9rem; font-weight: 800; gap: 10px; grid-template-columns: auto 1fr auto; list-style: none; padding: 15px 17px; }.tic-topic__code-example summary::-webkit-details-marker { display: none; }.tic-topic__code-example summary svg:first-child { color: #6ed0ff; }.tic-topic__code-example summary svg:last-child { color: #bba4ff; transition: transform .2s; }.tic-topic__code-example[open] summary { border-bottom: 1px solid rgba(112, 190, 239, .28); }.tic-topic__code-example[open] summary svg:last-child { transform: rotate(180deg); }.tic-topic__code-example > div { display: grid; gap: 9px; padding: 16px 19px 19px; }.tic-topic__code-example p { color: #b9d9eb; font-family: inherit; font-size: .86rem; line-height: 1.45; margin: 0; }.tic-topic__code-example code { background: rgba(8, 16, 29, .6); border: 1px solid rgba(112, 190, 239, .2); border-radius: 6px; color: #f1f8ff; display: block; font-size: clamp(.79rem, 1.3vw, .97rem); overflow-x: auto; padding: 11px 12px; white-space: pre; }.tic-code__tag { color: #86d8ff; }.tic-code__string { color: #d5b2ff; }.tic-code__result { color: #75e4ae; }.tic-code__moves { color: #e5eef7; }.tic-code__mistake { color: #ffb05b; }.tic-code__mate { color: #ff6f8b; font-weight: 900; }
 .tic-topic__symbols { border: 1px solid rgba(172, 117, 255, .48); border-radius: 10px; margin: 17px 0 0 auto; max-width: 745px; overflow: hidden; }.tic-topic__symbols summary { align-items: center; background: rgba(92, 47, 145, .18); color: #f2edff; cursor: pointer; display: grid; font-size: .94rem; font-weight: 800; gap: 9px; grid-template-columns: auto 1fr auto; list-style: none; padding: 15px 17px; }.tic-topic__symbols summary::-webkit-details-marker { display: none; }.tic-topic__symbols summary svg:first-child { color: #bc92ff; }.tic-topic__symbols summary svg:last-child { color: #d6bcff; transition: transform .2s; }.tic-topic__symbols[open] summary svg:last-child { transform: rotate(180deg); }.tic-topic__symbols > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }.tic-topic__symbols p { align-items: center; border-top: 1px solid rgba(172, 117, 255, .18); display: grid; gap: 7px; grid-template-columns: 55px 1fr; margin: 0; padding: 12px 14px; }.tic-topic__symbols code { background: rgba(161, 107, 255, .2); border-radius: 5px; color: #dfc9ff; font-family: "SFMono-Regular", Consolas, monospace; font-size: 1rem; font-weight: 800; padding: 5px 7px; text-align: center; }.tic-topic__symbols strong { color: #f1eff5; font-size: .88rem; }.tic-topic__symbols span { color: #bbb8c2; font-size: .79rem; grid-column: 2; line-height: 1.4; }@media(max-width:560px){.tic-topic__symbols > div{grid-template-columns:1fr}}
 .tic-topic__symbols p:nth-child(6n + 1) { background: rgba(75, 177, 255, .1); }.tic-topic__symbols p:nth-child(6n + 1) code { background: rgba(75, 177, 255, .24); color: #8ed6ff; }.tic-topic__symbols p:nth-child(6n + 2) { background: rgba(255, 82, 126, .1); }.tic-topic__symbols p:nth-child(6n + 2) code { background: rgba(255, 82, 126, .22); color: #ff9bb1; }.tic-topic__symbols p:nth-child(6n + 3) { background: rgba(255, 157, 74, .1); }.tic-topic__symbols p:nth-child(6n + 3) code { background: rgba(255, 157, 74, .22); color: #ffc080; }.tic-topic__symbols p:nth-child(6n + 4) { background: rgba(178, 116, 255, .1); }.tic-topic__symbols p:nth-child(6n + 4) code { background: rgba(178, 116, 255, .23); color: #d1adff; }.tic-topic__symbols p:nth-child(6n + 5) { background: rgba(72, 214, 151, .1); }.tic-topic__symbols p:nth-child(6n + 5) code { background: rgba(72, 214, 151, .23); color: #88f0c0; }.tic-topic__symbols p:nth-child(6n) { background: rgba(244, 202, 75, .1); }.tic-topic__symbols p:nth-child(6n) code { background: rgba(244, 202, 75, .23); color: #ffe17d; }
@@ -202,4 +203,25 @@ body:has(.tic-presentation) main { min-height: 100vh; }
 	.tic-topic__links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 	.tic-topic__gallery-image { height: 430px; }
 	.tic-topic__audience-workshop { max-width: 760px; }
+	.tic-topic__body > .tic-topic__activity,
+	.tic-topic__body > .tic-topic__discussion,
+	.tic-topic__body > .tic-topic__bad-activity {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#inicio .tic-topic__body > div:has(> .tic-topic__activity),
+	#inicio .tic-topic__body > .tic-topic__discussion,
+	#inicio .tic-topic__body > .tic-topic__bad-activity {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 560px;
+		width: 100%;
+	}
+	#inicio .tic-topic__body > div:has(> .tic-topic__activity) > .tic-topic__activity,
+	#inicio .tic-topic__body > div:has(> .tic-topic__activity) > .tic-topic__whiteboard,
+	#inicio .tic-topic__bad-activity > .tic-topic__activity {
+		box-sizing: border-box;
+		max-width: none;
+		width: 100%;
+	}
 }
